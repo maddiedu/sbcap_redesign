@@ -1,0 +1,443 @@
+
+/* STYLING FOR ALL PAGES ----------------------------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFFE9;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #0066cc;
+}
+
+
+/* NAVIGATION BAR ------------------------------------------------------------------------ */
+.currentPage {
+    text-decoration: underline;
+    color:white;
+}
+
+
+/* HOME PAGE SPECIFIC STYLING ----------------------------------------------------------- */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bannerImagehome {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: left;
+    color: white;
+}
+
+.bannerH1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.5;
+    color: white;
+}
+
+.missionPrograms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 2.5%;
+    background-color: #FFFFE9;
+    border-bottom: 2px solid gray;
+}
+
+.infoDiv {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    background: #FFFFE9;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.infoDivImage {
+    width: 45%;
+    height: auto;
+}
+
+.infoDivText {
+    padding: 20px;
+    flex: 1;
+}
+
+.infoDivText h2 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+.infoDivText a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004999;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.recentUpdates {
+    padding: 40px 12%;
+    background-color: #FFFFE9;
+}
+
+.viewMore {
+    font-size: 1rem;
+}
+
+.recentUpdatesHeading {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.recentUpdatesHeading h2 {
+    margin: 0;
+    color: #0066cc;
+}
+
+.recentUpdatesHeading a {
+    color: #0066cc;
+    font-size: 1rem;
+}
+
+.facebookEmbeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    padding: 0px 2.5%;
+}
+
+
+/* FOOTER -------------------------------------------------------------------------------- */
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #258365;
+    color: white;
+    padding: 20px;
+}
+
+.footerTitle {
+    margin: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footerText {
+    padding-top: 1rem;
+    font-size: 0.75rem;
+}
+
+.socialMediaLink {
+    margin-top: 0;
+}
+
+.socialMediaIcon {
+    height: 24px;
+    margin-left: 10px;
+}
+
+
+/* NON-HOME SPECIFIC STYLING ------------------------------------------------------------------- */
+.container {
+    padding: 0px 2.5%;
+}
+
+.contentDiv {
+    margin-bottom: 20px; 
+    padding: 0 2.5%;
+}
+
+.contentDiv p {
+    margin-left: 20px;
+}
+
+
+/* ABOUT SPECIFIC STYLING ---------------------------------------------------------------------- */
+.missionDiv {
+    padding-top: 15px;
+    display: flex; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    padding: 0 2.5%;
+}
+
+.missionDivText {
+    width: 45%; 
+    text-align: left;
+}
+
+.missionDivImage {
+    width: 45%; 
+    height: auto;
+}
+
+.missionDivText p {
+    margin-left: 20px;
+}
+
+.boardMembers {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.memberRow {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.member {
+    display: inline-block; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px; 
+    border: 2px solid black;
+    border-radius: 50% / 100%;
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 250px; 
+    min-width: 160px; 
+    height: auto;
+    white-space: nowrap; 
+}
+
+.memberName {
+    font-weight: 900;
+}
+
+.memberRole {
+    margin-top: -5px;
+    font-style: italic;
+}
+
+/* LARGE SCREENS - SPACE WITH GAP */
+@media (min-width: 768px) {
+    .memberRow {
+        justify-content: space-evenly; 
+        gap: 20px; 
+    }
+}
+
+/* SMALL SCREENS - STACK */
+@media (max-width: 768px) {
+    .memberRow {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .member {
+        width: 100%; 
+        max-width: 300px;
+    }
+}
+
+
+/* CONTACT SPECIFIC STYLING ---------------------------------------------------------------------- */
+.contact-form {
+    background-color: #D7EEFB;
+    border: 2px solid #22a0ef;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #258365;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* EVENTS SPECIFIC STYLING ---------------------------------------------------------------------- */
+.event {
+    background-color: #D7EEFB;;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.event-date {
+    padding-top: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.event-banner {
+    width: 90%;
+    display: block;
+    margin: -5px auto; 
+    border-radius: 4px;
+}
+
+.event-title {
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    font-weight: bold;
+    margin: 15px 0 10px;
+}
+
+.event-description {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left; 
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+
+/* COMMUNITY SPECIFIC STYLING ---------------------------------------------------------------------- */
+.partner {
+    border: 2px solid #22a0ef;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center; 
+}
+
+.partner-image {
+    height: 100px; 
+    width: auto; 
+    object-fit: scale-down; 
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: inline-block; 
+}
+
+.partner-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.partner-blurb {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.partner-link {
+    font-size: 16px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+}
+
+.partner-link:hover {
+    text-decoration: underline;
+}
+
+.row {
+    justify-content: center; 
+}
+
+.col-lg-6, .col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid #22a0ef;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .partner-image {
+        height: 150px;
+    }
+}
